@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div>
+        <form id="nameForm">
+            <label for="name"> Name </label>
+            <input type="text" id="name" name="name"><br>
+            <label for="Passwort">Passwort</label>
+            <input type="password" id="password">    
+            <input type="button" value="Register" onclick="dostuff()">
+        </form>
+        <script>
+            function dostuff(){
+               var name = document.getElementById("name").value;
+               var password = document.getElementById("password").value;
+               alert("Your name will be: " + name + " " + "Your Password will be: " + password);
+               document.getElementById("name").value = "";
+               document.getElementById("password").value ="";
+            }
+        </script>
+    </div>
+</body>
+</html>
